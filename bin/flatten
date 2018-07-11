@@ -1,0 +1,2 @@
+#!/bin/bash
+solidity_flattener "$1" --solc-paths="openzeppelin-solidity/=$PWD/node_modules/openzeppelin-solidity/"

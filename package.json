@@ -1,0 +1,25 @@
+{
+  "name": "asobicoin",
+  "version": "1.0.0",
+  "description": "ASOBI COIN",
+  "author": "justus@asobimo.com",
+  "private": true,
+  "scripts": {
+    "compile": "truffle compile",
+    "lint": "eslint --ignore-path .gitignore . && solium --dir contracts",
+    "lint-fix": "eslint --ignore-path .gitignore . --fix && solium --dir contracts --fix",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "1.10.0"
+  },
+  "devDependencies": {
+    "assert-rejected": "^1.1.1",
+    "eslint": "^4.15.0",
+    "eth-gas-reporter": "^0.1.9",
+    "solium": "^1.1.8",
+    "solium-plugin-zeppelin": "git+https://github.com/OpenZeppelin/solium-plugin-zeppelin.git#aec043c90d158210a6baa95b5247fa2dedd8775e",
+    "truffle": "^4.1.13",
+    "web3-utils": "^1.0.0-beta.34"
+  }
+}
