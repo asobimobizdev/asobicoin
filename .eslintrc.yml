@@ -1,0 +1,49 @@
+root: true
+globals:
+  artifacts: false
+  contract: false
+  assert: false
+env:
+  node: true
+  mocha: true
+parserOptions:
+  parser: babel-eslint
+  sourceType: module
+  allowImportExportEverywhere: true
+  ecmaVersion: 2017
+extends:
+- eslint:recommended
+rules:
+  indent:
+    - warn
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - warn
+    - double
+  semi:
+    - warn
+    - always
+  no-console:
+    - off
+  comma-dangle:
+    - warn
+    - functions: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      arrays: always-multiline
+  object-curly-spacing:
+    - warn
+    - always
+    - arraysInObjects: true
+      objectsInObjects: true
+  no-unused-vars:
+    - warn
+    - args: none
+  max-len:
+    - warn
+    - 80
+    - ignoreStrings: true
