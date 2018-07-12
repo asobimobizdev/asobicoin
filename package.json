@@ -4,6 +4,10 @@
   "description": "ASOBI COIN",
   "author": "justus@asobimo.com",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asobicoin/asobicoin.git"
+  },
   "scripts": {
     "compile": "truffle compile",
     "lint": "eslint --ignore-path .gitignore . && solium --dir contracts",
