@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9-stretch
+    working_directory: ~/asobicoin
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          command: npm install
+      - run:
+          command: npm run lint
+      - run:
+          command: npm test
+      - save_cache:
+          paths:
+            - ~/asobicoin/node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
