@@ -81,29 +81,22 @@ npm run flatten
 You will see the following output:
 
 ```
-pragma solidity ^0.4.13;
+pragma solidity ^0.4.24;
 
-contract ERC20Basic {
-  function totalSupply() public view returns (uint256);
-  function balanceOf(address who) public view returns (uint256);
-  function transfer(address to, uint256 value) public returns (bool);
-  event Transfer(address indexed from, address indexed to, uint256 value);
-}
+// ... Here be imports
 
-// ... here be contracts
+// File: contracts/AsobiCoin.sol
 
-contract AsobiCoin is CappedToken {
+/**
+ * @title AsobiCoin is the CappedToken implementation for ASOBI COIN
+ * @dev AsobiCoin is limited to 16,500,000,000 ABX
+ * @dev AsobiCoin has 18 decimals of precision
+ * @dev AsobiCoin has the symbol ABX
+ */
+contract AsobiCoin is CappedToken(16500000000 ether) {
     string public name = "ASOBI COIN";
     string public symbol = "ABX";
     uint256 public decimals = 18;
-    constructor() public CappedToken(300000000 ether) {
-    }
-}
-
-library SafeMath {
-
-// ... here be SafeMath
-
 }
 ```
 
@@ -111,6 +104,18 @@ For extra comfort, you can copy the code directly to the X clipboard:
 
 ```bash
 npm run flatten | xclip -sel clipboard
+```
+
+You can also print out a SHA-256 sum using the following command:
+
+```bash
+npm run flatten | sha256sum
+```
+
+And you should see the following result:
+
+```bash
+0819491c37f097bc5631fec5b44645bec4b3d5d020eb248282435ceb8c3a01a1
 ```
 
 You can then hand the code over to [Etherscan](https://etherscan.io/). You can
