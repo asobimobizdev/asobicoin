@@ -11,9 +11,11 @@ It also contains everything necessary to
   [Etherscan](https://etherscan.io/), and
 - audit the smart contract code once it has been deployed.
 
-Currently, ASOBI COIN has not been deployed on the main Ethereum network. As
-soon as this happens, the ASOBI COIN smart contract address will be added to
-this README file.
+The contract has been deployed on the main Ethereum Network on
+
+```
+0x49ceB57714000F18F3749Cf2D130E135F9c473A4
+```
 
 ## Quickstart
 
