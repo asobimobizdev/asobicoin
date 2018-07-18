@@ -115,7 +115,7 @@ npm run flatten | sha256sum
 And you should see the following result:
 
 ```bash
-0819491c37f097bc5631fec5b44645bec4b3d5d020eb248282435ceb8c3a01a1
+0819491c37f097bc5631fec5b44645bec4b3d5d020eb248282435ceb8c3a01a1  -
 ```
 
 You can then hand the code over to [Etherscan](https://etherscan.io/). You can
