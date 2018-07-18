@@ -21,6 +21,9 @@ jobs:
       - run:
           name: Test flattening
           command: npx solcjs --bin --output-dir /tmp <(npm run flatten)
+      - run:
+          name: Test
+          command: npm run flatten | sha256sum
       - save_cache:
           paths:
             - ~/asobicoin/node_modules
