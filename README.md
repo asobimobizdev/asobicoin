@@ -140,15 +140,23 @@ Current issues with solidity-flattener:
 .
 ├── bin
 │   └── flatten
+├── .circleci
+│   ├── config.yml
 ├── contracts
 │   ├── AsobiCoin.sol
 │   ├── Escrow.sol
 │   └── Migrations.sol
+├── .editorconfig
+├── .eslintrc.yml
+├── .gitignore
+├── LICENSE
 ├── migrations
 │   └── 1_initial_migration.js
 ├── package.json
 ├── package-lock.json
 ├── README.md
+├── soliumignore
+├── soliumrc.json
 ├── test
 │   └── AsobiCoin.js
 └── truffle.js
@@ -157,14 +165,22 @@ Current issues with solidity-flattener:
 | File                                | Description                      |
 |-------------------------------------|----------------------------------|
 | `bin/flatten`                       | Flatten Solidity smart contracts |
+| `.circleci`                         | CircleCI configuration files |
+| `.circleci/config.yml`              | CircleCI configuration YAML file |
 | `contracts/`                        | Contain Solidity smart contracts |
 | `contracts/AsobiCoin.sol`           | Contain ASOBI COIN smart contract |
 | `contracts/Migrations.sol`          | Contain Truffle Suite migration smart contract |
+| `.editorconfig`                     | [EditorConfig](https://editorconfig.org/) file |
+| `.eslintrc.yml`                     | [ESLint](https://eslint.org/) configuration |
+| `.gitignore`                        | gitignore file |
+| `LICENSE`                           | MIT License |
 | `migrations/`                       | Contain Truffle Suite smart contract migrations |
 | `migrations/1_initial_migration.js` | Initial migration |
 | `package.json`                      | NPM package file |
 | `package-lock.json`                 | NPM package lock file |
 | `README.md`                         | README file |
+| `.soliumignore`                     | Solium ignore file |
+| `.soliumrc.json`                    | Solium configuration file |
 | `test/`                             | Solidity smart contract tests run by Truffle Suite |
 | `test/AsobiCoin.js`                 | Test ASOBI COIN smart contract |
 | `truffle.js`                        | Configuration for Truffle Suite |
