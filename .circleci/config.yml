@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9-stretch
+      - image: circleci/node:10
     working_directory: ~/asobicoin
     steps:
       - checkout
@@ -18,6 +18,9 @@ jobs:
       - run:
           name: Run tests
           command: npm test
+      - run:
+          name: Test flattening
+          command: npx solcjs --bin --output-dir /tmp <(npm run flatten)
       - save_cache:
           paths:
             - ~/asobicoin/node_modules
