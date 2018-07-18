@@ -13,10 +13,10 @@ contract("AsobiCoin", accounts => {
 
   const coinAmount = 100;
   const cap = web3Utils.toWei(
-    "300_000_000".replace(/_/g, ""),
+    "16_500_000_000".replace(/_/g, ""),
   );
   const overCap = web3Utils.toWei(
-    "300_000_001".replace(/_/g, ""),
+    "16_500_000_001".replace(/_/g, ""),
   );
 
   let coin;
