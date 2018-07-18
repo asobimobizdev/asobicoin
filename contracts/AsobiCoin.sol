@@ -9,10 +9,8 @@ import "openzeppelin-solidity/contracts/token/ERC20/CappedToken.sol";
  * @dev AsobiCoin has 18 decimals of precision
  * @dev AsobiCoin has the symbol ABX
  */
-contract AsobiCoin is CappedToken {
+contract AsobiCoin is CappedToken(16500000000 ether) {
     string public name = "ASOBI COIN";
     string public symbol = "ABX";
     uint256 public decimals = 18;
-    constructor() public CappedToken(16500000000 ether) {
-    }
 }
