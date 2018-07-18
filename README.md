@@ -48,6 +48,20 @@ tokens emitted as part of the sale -- if fully sold out.
 | Symbol | ABX |
 | Token Cap | 16,500,000,000 |
 
+## Token Usage Steps
+
+1. Deploy flattened smart contract code to Ethereum main network using [Remix
+   IDE](https://remix.ethereum.org/).
+2. Document deployed address.
+3. Add verified source code on Etherscan.
+4. Audit contract.
+5. Revise contract if changes are required and go back to step 1.
+6. Add audit results to this repository.
+7. Once token sale is finished: `.mint()` tokens to all token purchasers,
+   keeping in mind the correct decimal conversion.
+8. Call finishMinting() on token contract.
+9. Done.
+
 ## Flattening Smart Contract Code for Etherscan
 
 In order to flatten `contracts/AsobiCoin.sol`, the following tools are necessary:
