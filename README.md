@@ -17,6 +17,10 @@ The contract has been deployed on the main Ethereum Network on
 0x49ceB57714000F18F3749Cf2D130E135F9c473A4
 ```
 
+The contract can be viewed on Etherscan at
+
+[https://etherscan.io/address/0x49ceb57714000f18f3749cf2d130e135f9c473a4](https://etherscan.io/address/0x49ceb57714000f18f3749cf2d130e135f9c473a4)
+
 ## Quickstart
 
 ```
