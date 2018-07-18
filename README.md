@@ -35,6 +35,19 @@ The following commands are available:
 | `npm run lint`     | Run ESlint and Solium to lint all JavaScript and Solidity code |
 | `npm test`         | Run all smart contract tests using truffle |
 
+## About ASOBI COIN
+
+ASOBI COIN is a token that is emitted as part of the [ASOBI
+COIN](https://asobimo.io/en/) token sale. There will be up to 16,500,000,000
+tokens emitted as part of the sale -- if fully sold out.
+
+| | Value |
+|-|-------|
+| Decimals | 18 |
+| Full Name | ASOBI COIN |
+| Symbol | ABX |
+| Token Cap | 16,500,000,000 |
+
 ## Flattening Smart Contract Code for Etherscan
 
 In order to flatten `contracts/AsobiCoin.sol`, the following tools are necessary:
