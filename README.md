@@ -11,9 +11,15 @@ It also contains everything necessary to
   [Etherscan](https://etherscan.io/), and
 - audit the smart contract code once it has been deployed.
 
-Currently, ASOBI COIN has not been deployed on the main Ethereum network. As
-soon as this happens, the ASOBI COIN smart contract address will be added to
-this README file.
+The contract has been deployed on the main Ethereum Network on
+
+```
+0x49ceB57714000F18F3749Cf2D130E135F9c473A4
+```
+
+The contract can be viewed on Etherscan at
+
+[https://etherscan.io/address/0x49ceb57714000f18f3749cf2d130e135f9c473a4](https://etherscan.io/address/0x49ceb57714000f18f3749cf2d130e135f9c473a4)
 
 ## Quickstart
 
@@ -49,6 +55,13 @@ tokens emitted as part of the sale -- if fully sold out.
 | Token Cap | 16,500,000,000 |
 
 ## Token Usage Steps
+
+For Remix, we use the following compilation options
+
+| | Value |
+|-|-------|
+| Solidity Version | `0.4.24+commit.e67f0147.Emscripten.clang` |
+| Enable Optimizations | Yes |
 
 1. Flatten the contract (refer to [this
    section](#flattening-smart-contract-code-for-etherscan) to learn how) and
@@ -122,7 +135,15 @@ You can then hand the code over to [Etherscan](https://etherscan.io/). You can
 upload the code directly when viewing the deployed smart contract on Etherscan
 after deployment. You can also upload it using the [Verify Contract
 Code](https://etherscan.io/verifyContract) form, provided you know have the
-contract address at hand.
+contract address at hand. Make sure to use the following settings for code verification:
+
+| | Value |
+|-|-------|
+| Contract Name | `AsobiCoin` |
+| Compiler | `0.4.24+commit.e67f0147` |
+| Optimization | Yes |
+| Runs (Optimizer) | 200 |
+| Constructor Arguments | None |
 
 ## Project Organization
 
