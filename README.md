@@ -56,6 +56,13 @@ tokens emitted as part of the sale -- if fully sold out.
 
 ## Token Usage Steps
 
+For Remix, we use the following compilation options
+
+| | Value |
+|-|-------|
+| Solidity Version | `0.4.24+commit.e67f0147.Emscripten.clang` |
+| Enable Optimizations | Yes |
+
 1. Flatten the contract (refer to [this
    section](#flattening-smart-contract-code-for-etherscan) to learn how) and
    copy to clip board.
@@ -128,7 +135,15 @@ You can then hand the code over to [Etherscan](https://etherscan.io/). You can
 upload the code directly when viewing the deployed smart contract on Etherscan
 after deployment. You can also upload it using the [Verify Contract
 Code](https://etherscan.io/verifyContract) form, provided you know have the
-contract address at hand.
+contract address at hand. Make sure to use the following settings for code verification:
+
+| | Value |
+|-|-------|
+| Contract Name | `AsobiCoin` |
+| Compiler | `0.4.24+commit.e67f0147` |
+| Optimization | Yes |
+| Runs (Optimizer) | 200 |
+| Constructor Arguments | None |
 
 ## Project Organization
 
